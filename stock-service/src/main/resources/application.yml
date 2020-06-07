@@ -1,0 +1,19 @@
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8031/eureka/
+  instance:
+    hostname: localhost
+
+
+db-service:
+  url: http://db-service/stock/db/
+
+server:
+  port: 8032
+
+spring:
+  application:
+    name: stock-service

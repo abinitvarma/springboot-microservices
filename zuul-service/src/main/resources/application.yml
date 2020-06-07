@@ -1,0 +1,12 @@
+zuul:
+  prefix: /api
+  routes:
+    db-service:
+      path: /db-service/**
+      url: http://localhost:8033
+    stock-service:
+      path: /stock-service/**
+      url: http://localhost:8032
+
+server:
+  port: 8030
